@@ -1,6 +1,7 @@
-**Adaptive Image Registration and Object Masking in Video Streams**
+### **Adaptive Image Registration and Object Masking in Video Streams**
+
 The objective of this project was to develop a system that can dynamically detect and mask specified regions within a video stream or recorded video based on manually marked templates. This involves image registration using feature detection, homography computation, and real-time tracking to ensure that the masking is accurately applied across frames. 
-### **Features**  
+# **Features**  
 **Template Marking and Field Selection**  
 The system enables users to identify and mark specific regions in template images for video processing. By loading template images, users can manually mark regions intended for masking in video playback or live streaming. These marked regions are saved for later reference to ensure accurate masking during processing.  
 **Feature Detection and Matching**  

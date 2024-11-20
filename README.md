@@ -8,6 +8,7 @@ Template Marking and Field Selection :
 The system enables users to identify and mark specific regions in template images for video processing. By loading template images, users can manually mark regions intended for masking in video playback or live streaming. These marked regions are saved for later reference to ensure accurate masking during processing.
 
 Feature Detection and Matching :
+
 To detect and match features between template images and video frames, the system implements algorithms such as **SIFT (Scale-Invariant Feature Transform)** and **ORB (Oriented FAST and Rotated BRIEF)**. These robust methods ensure accurate detection of key points, while matching is facilitated using **FLANN-based matcher** and **BFMatcher** for seamless alignment of features between templates and video content.  
 
 Homography and Image Registration :

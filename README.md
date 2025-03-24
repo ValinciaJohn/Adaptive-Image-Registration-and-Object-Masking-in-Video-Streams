@@ -56,3 +56,4 @@ This project aims to develop a system that dynamically detects and masks specifi
 - **Performance Metrics:** FPS measurement to assess system efficiency and processing speed.
 - **Edge Case Handling:** Works effectively with moderate background noise and partial occlusions.
 
+**Google Drive Link** : https://drive.google.com/file/d/1KaVZ4Gw4hN8-FFLVx-y8GtGMTlH6U612/view?usp=drive_link

@@ -39,7 +39,22 @@ This project aims to develop a system that dynamically detects and masks specifi
 - **Python:** Core language for scripting and implementation.  
 - **OpenCV:** For image processing, feature detection, and tracking.  
 - **NumPy:** Efficient numerical computations and array operations.  
-- **Streamlit:** (if applicable) for interactive UI and visualization.  
+- **Streamlit:** Interactive UI and visualization.  
 - **Matplotlib:** For visualization of tracking and results.  
 
 ---
+## 🔎 How It Works
+- **Template Marking:** Load template images and mark regions for masking.
+- **Feature Detection:** Detect key points using SIFT or ORB.
+- **Feature Matching:** Use FLANN-based matcher or BFMatcher for feature alignment.
+- **Homography Computation:** Compute the perspective transformation for field registration.
+- **Real-Time Tracking:** Track marked regions using Lucas-Kanade optical flow.
+- **Dynamic Masking:** Apply and adjust masks across frames to maintain accurate coverage.
+
+---
+## 📊 Results and Analysis
+- **Accurate Field Alignment:** Effective registration of marked regions across frames.
+- **Dynamic Masking:** Successful application of masks in real-time video streams.
+- **Performance Metrics:** FPS measurement to assess system efficiency and processing speed.
+- **Edge Case Handling:** Works effectively with moderate background noise and partial occlusions.
+

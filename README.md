@@ -39,9 +39,7 @@ This project aims to develop a system that dynamically detects and masks specifi
 - **Python:** Core language for scripting and implementation.  
 - **OpenCV:** For image processing, feature detection, and tracking.  
 - **NumPy:** Efficient numerical computations and array operations.  
-- **Streamlit:** Interactive UI and visualization.  
-- **Matplotlib:** For visualization of tracking and results.  
-
+  
 ---
 ## 🔎 How It Works
 - **Template Marking:** Load template images and mark regions for masking.

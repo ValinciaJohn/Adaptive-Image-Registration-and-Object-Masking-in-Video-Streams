@@ -1,24 +1,45 @@
-### **Adaptive Image Registration and Object Masking in Video Streams**
+# Adaptive Image Registration and Object Masking in Video Streams 🎥🔒
 
-The objective of this project was to develop a system that can dynamically detect and mask specified regions within a video stream or recorded video based on manually marked templates. This involves image registration using feature detection, homography computation, and real-time tracking to ensure that the masking is accurately applied across frames. 
+## 📌 Project Overview  
+This project aims to develop a system that dynamically detects and masks specified regions within a video stream or recorded video based on manually marked templates. Using **image registration**, **feature detection**, **homography computation**, and **real-time tracking**, the system ensures accurate masking across frames.  
 
-**Features**  
-Template Marking and Field Selection :
+---
 
-The system enables users to identify and mark specific regions in template images for video processing. By loading template images, users can manually mark regions intended for masking in video playback or live streaming. These marked regions are saved for later reference to ensure accurate masking during processing.
+## 🔧 Features  
+### ✅ Template Marking and Field Selection  
+- Users can **load template images** and manually mark specific regions for masking.  
+- Marked regions are saved for reference to ensure consistent masking during video processing.  
 
-Feature Detection and Matching :
+### ✅ Feature Detection and Matching  
+- Implements robust feature detection using:  
+  - **SIFT (Scale-Invariant Feature Transform)**  
+  - **ORB (Oriented FAST and Rotated BRIEF)**  
+- Feature matching techniques used:  
+  - **FLANN-based Matcher** for fast approximate matching.  
+  - **BFMatcher** for brute-force matching with improved accuracy.  
 
-To detect and match features between template images and video frames, the system implements algorithms such as **SIFT (Scale-Invariant Feature Transform)** and **ORB (Oriented FAST and Rotated BRIEF)**. These robust methods ensure accurate detection of key points, while matching is facilitated using **FLANN-based matcher** and **BFMatcher** for seamless alignment of features between templates and video content.  
+### ✅ Homography and Image Registration  
+- Computes **homography** to map marked regions from template images to corresponding regions in video frames.  
+- Applies perspective transformations for precise alignment and registration.  
+- Ensures accurate positioning of marked fields on video frames.  
 
-Homography and Image Registration :
+### ✅ Real-Time Object Tracking and Masking  
+- Uses the **Lucas-Kanade optical flow** method to track object movement across frames.  
+- Dynamically applies masks to predefined regions, updating positions in real time.  
+- Accurate and consistent masking using homography transformations.  
 
-The system computes homography to map marked regions from template images to corresponding regions in video frames. This process involves identifying matched points and applying perspective transformations, enabling precise alignment and registration of marked fields to video frames.  
+### ✅ Performance and Optimization  
+- Designed to operate in **real-time** while maintaining high accuracy.  
+- Measures and optimizes **FPS (Frames Per Second)** to balance performance and resource usage.  
+- Adjustable frame processing speed for efficient resource utilization.  
 
-Real-Time Object Tracking and Masking :
+---
 
-To track object movement and dynamically apply masking, the system utilizes the **Lucas-Kanade optical flow** method. Detected points are tracked across video frames, and predefined masks are applied to obscure specific areas in real-time. The mask positions are updated dynamically using homography to ensure consistent and accurate coverage.  
+## 🛠️ Technology Stack  
+- **Python:** Core language for scripting and implementation.  
+- **OpenCV:** For image processing, feature detection, and tracking.  
+- **NumPy:** Efficient numerical computations and array operations.  
+- **Streamlit:** (if applicable) for interactive UI and visualization.  
+- **Matplotlib:** For visualization of tracking and results.  
 
-Performance and Optimization :
-
-The system is designed to operate in real-time while maintaining high accuracy and performance. Optimizations include reducing processing time, ensuring acceptable frame rates, and calculating **FPS (Frames Per Second)**. Additionally, frame processing speed can be controlled to balance performance and resource utilization effectively.  
+---
